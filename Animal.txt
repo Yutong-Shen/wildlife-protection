@@ -1,0 +1,13 @@
+1. We want to take a set of images (in a folder) and reverse Google Search them. Then we can get information on the websites that these pictures are from. If any websites come up frequently, it would be good to also try to parse usernames and dates from them.
+- If the code can be refactored to make it better - go for it!
+
+2. We can get EXIF data from each picture in the input folder - including potentially the date and GPS data. However, some pictures lack EXIF data because it's been wiped. One possible workaround is to get the EXIF data from the images on Google images.
+(There is a caveat here - Google might be a search engine that automatically wipes EXIF data, in which case we would have to find a way to get it from the websites directly).
+
+3. We want to be able to search a binomial name (e.g: Paphiopedilum rungsuriyanum) in a number of databases and return any results. The databases are IPNI (plants), amphibiaweb, and reptile-database (links in the code). The following functionalities need to be added to the code:
+- need to be able to return a result if the user doesn't know if it's a plant, amphibian or reptile.
+- need to be able to return a null result
+- should be able to input a number of names at once
+- one possible function is to be able to get the code to run automatically once a week to check for new results - possible extra task.
+
+4. It needs to look pretty! TKInter is a possible package that could be used here as there are a lot of tutorials here and it's a well-tested package, but it looks dated. I would first look for nicer looking GUI packages and try those.
